@@ -1,0 +1,369 @@
+:root {
+    --blue_colour: #2196F3;
+    --grey_text: #757575;
+    --shadow: 0px 3px 5px -3px black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.heade{
+    max-width: 1600px; 
+  padding: 220px 220px;   
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.logo .logo {
+    color: var(--blue_colour);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+header nav ul li:hover {
+    color: var(--blue_colour);
+    transform: scale(1.05);
+}
+
+.contacts_info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contacts_info li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey_text);
+}
+
+.contacts_info li a:hover {
+    color: var(--blue_colour);
+}
+
+.order_service {
+    background-color: #2F303A;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.order_service h1 {
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.order_service button {
+    background-color: var(--blue_colour);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.order_service button:hover {
+    background-color: #1769aa;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.features ul li {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.features ul li .icon {
+    background-color: #F5F4FA;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.features ul li h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.features ul li p {
+    color: var(--grey_text);
+}
+.features ul li h3, .features ul li p {
+    text-align: left;
+}
+
+.work {
+    padding: 50px 20px;
+}
+
+.work h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.work ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work ul li {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 370px;
+}
+
+.work ul li img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.team {
+    background-color: #F5F4FA;
+    padding: 50px 20px;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.team .workers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.team .workers .worker {
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team .workers .worker:hover {
+    transform: scale(1.05);
+}
+
+.team .workers .worker img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.team .workers .worker .name {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 5px;
+}
+
+.team .workers .worker .role {
+    font-size: 14px;
+    color: var(--grey_text);
+    margin-bottom: 10px;
+}
+
+.team .workers .worker ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.team .workers .worker a {
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.team .workers .worker a:hover {
+    background-color: var(--blue_colour);
+    fill: #ffffff;
+}
+
+footer {
+    background-color: #2F303A;
+    color: #ffffff;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+footer .logo {
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer address {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer address ul {
+    margin-top: 10px;
+}
+
+footer address ul li {
+    margin-bottom: 5px;
+}
+
+footer address ul li a {
+    color: var(--grey_text);
+}
+
+footer .our_contacts {
+    display: flex;
+    gap: 10px;
+}
+
+footer .our_contacts li a {
+    fill: #ffffff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+footer .our_contacts li a:hover {
+    background-color: var(--blue_colour);
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+footer form label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer form input {
+    background-color: #2F303A;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 10px;
+    width: 358px;
+    height: 30px;
+}
+
+footer form button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue_colour);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+footer form button svg.image {
+    fill: #ffffff;
+}
+footer form button:hover {
+    background-color: #1769aa;
+}
+.footer-section{
+    text-transform: uppercase;
+}
