@@ -368,3 +368,113 @@ footer form button:hover {
     text-transform: uppercase;
 }
 
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Для планшетів (екрани до 1024px) */
+@media screen and (max-width: 1024px) {
+    header nav ul {
+        gap: 10px;
+    }
+
+    .contacts_info {
+        gap: 10px;
+    }
+
+    .order_service h1 {
+        font-size: 36px;
+    }
+
+    .features ul {
+        grid-template-columns: 1fr 1fr; /* Дві колонки замість чотирьох */
+    }
+
+    .work ul li {
+        flex: 1 1 calc(50% - 20px); /* Дві колонки */
+    }
+
+    footer {
+        grid-template-columns: 1fr; /* Вертикальне розташування */
+    }
+}
+
+/* Для мобільних пристроїв (екрани до 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .contacts_info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order_service h1 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .features ul {
+        grid-template-columns: 1fr; /* Одна колонка */
+    }
+
+    .team .workers {
+        grid-template-columns: 1fr; /* Вертикально */
+    }
+
+    .work ul li {
+        flex: 1 1 100%; /* Одна колонка */
+    }
+
+    footer form {
+        flex-direction: column;
+    }
+
+    footer form input {
+        width: 100%; /* Розтягнути на всю ширину */
+    }
+
+    footer form button {
+        width: 100%; /* Кнопка теж на всю ширину */
+    }
+}
+
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media screen and (max-width: 480px) {
+    .order_service h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .team .workers .worker .name,
+    .team .workers .worker .role {
+        font-size: 14px;
+    }
+
+    .features h2,
+    .work h2,
+    .team h2 {
+        font-size: 28px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
